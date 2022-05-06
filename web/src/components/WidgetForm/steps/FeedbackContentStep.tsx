@@ -32,9 +32,11 @@ export function FeedbackContentStep({
         await api.post('/feedbacks/create',{
             type: feedbackType,
             comment,
-            screenshot
+            screenshot:"Mockado devido o tamanho da string da img Base64"
         })
-        
+        console.log(feedbackType)
+        console.log(comment)
+        console.log(screenshot)
         setIsSendingFeedback(false);
         onFeedbackSent();
     }
