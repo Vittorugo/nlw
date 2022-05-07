@@ -11,6 +11,6 @@ data class Feedback(
     val id: Long,
     val type: String,
     val comment: String,
-    val screenshot: String
+    val screenshot: String?
 ) {
 }
